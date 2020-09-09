@@ -1,0 +1,24 @@
+{
+  "name": "dormitory_project_pet_sip",
+  "version": "1.0.0",
+  "description": "pet and study project",
+  "main": "index.js",
+  "scripts": {
+    "server:start": "nodemon index.js"
+  },
+  "keywords": [
+    "pet",
+    "SIP"
+  ],
+  "author": "Alexandr Veselkin <sashaasdzxc@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.20.6",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
