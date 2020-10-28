@@ -1,0 +1,16 @@
+body {
+  padding-top: 71px;
+}
+
+.table thead th {
+  border-style: none;
+}
+
+.no-card-border {
+  border-bottom-style: none!important;
+}
+
+.no-cell-border {
+  border-style: none!important;
+}
+

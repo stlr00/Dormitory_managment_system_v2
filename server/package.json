@@ -4,7 +4,7 @@
   "description": "pet and study project",
   "main": "index.js",
   "scripts": {
-    "server:start": "nodemon index.js"
+    "server:start": "../node_modules/.bin/nodemon index.js"
   },
   "keywords": [
     "pet",
@@ -13,10 +13,9 @@
   "author": "Alexandr Veselkin <sashaasdzxc@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.8.1",
+    "eslint": "^7.12.1",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-react": "^7.20.6",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.6"
   },
   "dependencies": {
     "express": "^4.17.1"
