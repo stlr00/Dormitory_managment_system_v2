@@ -1,10 +1,11 @@
 {
-  "name": "dormitory_project_pet_sip",
+  "name": "dormitory_project_pet_sip-server",
   "version": "1.0.0",
+  "private": true,
   "description": "pet and study project",
   "main": "index.js",
   "scripts": {
-    "server:start": "../node_modules/.bin/nodemon index.js"
+    "server:start": "nodemon index.js"
   },
   "keywords": [
     "pet",
