@@ -29,6 +29,7 @@ export const Search = () => {
                 value="course"
                 name="search-type"
               />
+
               <label
                 className="form-check-label"
                 htmlFor="formCheck-2">

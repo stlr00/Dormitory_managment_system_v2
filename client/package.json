@@ -35,6 +35,7 @@
         "error",
         "never"
       ],
+      "linebreak-style": "off",
       "indent": [
         "error",
         2

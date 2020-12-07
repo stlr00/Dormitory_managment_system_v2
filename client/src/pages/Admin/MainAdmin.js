@@ -8,13 +8,13 @@ export const MainAdmin = () => {
   const {path, url} = useRouteMatch()
   const routes = useAdminRoutes(path)
   return (
-    <div>
+    <>
       <HeaderAdmin url={url}/>
       <div className="container-lg">
         <div className="row">
           {routes}
         </div>
       </div>
-    </div>
+    </>
   )
 }

@@ -18,6 +18,8 @@ export const Table = () => {
             </thead>
             <tbody>
               <TableRow/>
+              <TableRow/>
+              <TableRow/>
             </tbody>
           </table>
         </div>

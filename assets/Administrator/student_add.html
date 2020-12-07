@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dormitory_students</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark">
+        <div class="container"><a class="navbar-brand" href="#"><i class="fa fa-building"></i>&nbsp;Общежитие №2</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse flex-grow-1" id="navcol-1">
+                <ul class="nav navbar-nav flex-grow-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Список студентов</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Заселение</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Жалобы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Строй-отряд</a></li>
+                </ul><button class="btn btn-outline-light btn-sm ml-auto my-2 my-md-0" type="button">Выход</button></div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 m-auto">
+                <div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span><strong>Студент успешно добавлен</strong><br></span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 m-lg-auto">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h2 class="card-title">Добавление нового студента</h2>
+                        <p class="card-text">Здесь вы можете добавить нового студента. Для этого заполните все поля и нажмите "добавить".</p>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="last_name">Фамилия</label><input class="form-control" type="text" id="last_name"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="name">Имя</label><input class="form-control" type="text" id="name"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="patronymic">Отчество</label><input class="form-control" type="text" id="patronymic"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="birthday">Дата рождения</label><input class="form-control" id="birthday" type="date"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group"><label for="address">Адрес постоянной регистрации</label><input class="form-control" type="text" id="address"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-3">
+                                    <div class="form-group"><label for="contract">Номер договора</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"><span class="input-group-text">ОБ2-</span></div><input class="form-control" type="text" id="contract"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-7">
+                                    <fieldset class="form-group">
+                                        <legend class="col-form-label pt-0 mb-md-1">Тип обучения</legend>
+                                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="undergraduate" name="type_of_study" checked=""><label class="form-check-label" for="undergraduate">Бакалавриат</label></div>
+                                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="specialty" name="type_of_study"><label class="form-check-label" for="specialty">Специалитет</label></div>
+                                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="magistracy" name="type_of_study"><label class="form-check-label" for="magistracy">Магистратура</label></div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-1 col-lg-2">
+                                    <div class="form-group"><label>Курс</label><input class="form-control" type="number" id="course" min="1" max="5" step="1"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="institute">Институт</label><select class="form-control text-truncate" id="institute"><option value="undefined" selected="">Выберите институт</option><option value="IT">ИТ</option><option value="THT">ТХТ</option><option value="RTC">РТС</option></select></div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group"><label for="date_start">Дата начала обучения</label><input class="form-control" id="date_start" type="date"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group"><label for="date_end">Дата окончания обучения</label><input class="form-control" id="date_end" type="date"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="size">Размер комнаты</label><select class="form-control text-truncate" id="size"><option value="undefined" selected="">Выберите размер комнаты</option><option value="1">1</option><option value="2">2</option><option value="2">2</option></select></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="flat">Квартира</label><select class="form-control text-truncate" id="flat"><option value="undefined" selected="">Выберите квартиру</option><option value="33">33</option><option value="44">44</option><option value="45">45</option></select></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="flat">Комната</label><select class="form-control text-truncate" id="room"><option value="undefined" selected="">Выберите комнату</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col text-center text-md-right"><button class="btn btn-success btn-lg" type="submit">Добавить</button><button class="btn btn-danger btn-lg ml-4" type="reset">Сбросить</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
