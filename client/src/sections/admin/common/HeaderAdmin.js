@@ -5,7 +5,7 @@ export const HeaderAdmin = ({url}) => {
   return (
     <nav className="navbar navbar-dark navbar-expand-md fixed-top bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <i className="fa fa-building"/>
           &nbsp;Общежитие №2
         </a>
@@ -15,7 +15,7 @@ export const HeaderAdmin = ({url}) => {
           data-target="#navcol-1"
         >
           <span className="sr-only">Toggle navigation</span>
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"/>
         </button>
         <div
           className="collapse navbar-collapse flex-grow-1"

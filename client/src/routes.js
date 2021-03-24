@@ -1,6 +1,6 @@
 import React from 'react'
 import {Switch, Route, Redirect} from 'react-router-dom'
-import {MainAdmin} from './pages/Admin/MainAdmin'
+import {MainAdmin} from './sections/admin/MainAdmin'
 
 export const useRoutes = (isAuth) => {
   if (isAuth) {

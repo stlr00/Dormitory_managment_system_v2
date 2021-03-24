@@ -1,6 +1,6 @@
 import React from 'react'
 import {useRouteMatch} from 'react-router-dom'
-import {HeaderAdmin} from './components/HeaderAdmin'
+import {HeaderAdmin} from './common/HeaderAdmin'
 import './styles.css'
 import {useAdminRoutes} from './adminRoutes'
 
