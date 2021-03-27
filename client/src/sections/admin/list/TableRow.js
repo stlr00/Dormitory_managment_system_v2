@@ -4,7 +4,7 @@ import {faInfoCircle, faTrashAlt, faPencilAlt}
   from '@fortawesome/free-solid-svg-icons'
 import {Collapse} from 'react-bootstrap'
 
-export const TableRow = () => {
+export const TableRow = ({user}) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const collapseRow = (e) => {
@@ -13,17 +13,17 @@ export const TableRow = () => {
   }
 
   return (
-    <React.Fragment>
+    <>
       <tr>
         <td className="d-none d-md-table-cell">1</td>
         <td>25/3</td>
-        <td>Кузьмин Лев Олегович</td>
+        <td>{user.name}</td>
         <td className="d-none d-md-table-cell">3</td>
-        <td className="text-nowrap">
+        <td className="text-center">
           <a
             onClick={collapseRow}
             className="badge badge-pill badge-info text-white"
-            href="#info-id" role="button"
+            href="#info" role="button"
             aria-expanded={isOpen}
             aria-controls="info-id"
           >
@@ -31,12 +31,16 @@ export const TableRow = () => {
           </a>&nbsp;
           <a
             className="badge badge-pill badge-warning text-white"
-            role="button">
+            role="button"
+            href="#edit"
+          >
             <FontAwesomeIcon icon={faPencilAlt}/>
           </a>&nbsp;
           <a
             className="badge badge-pill badge-danger text-white"
-            role="button">
+            role="button"
+            href="#delete"
+          >
             <FontAwesomeIcon icon={faTrashAlt}/>
           </a>&nbsp;
         </td>
@@ -71,6 +75,6 @@ export const TableRow = () => {
           </Collapse>
         </td>
       </tr>
-    </React.Fragment>
+    </>
   )
 }

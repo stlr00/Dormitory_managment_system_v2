@@ -1,7 +1,7 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
-import {StudentList} from './pages/List/StudentList'
-import {StudentAdd} from './pages/Add/StudentAdd'
+import {StudentList} from './list/StudentList'
+import {StudentAdd} from './add/StudentAdd'
 
 export const useAdminRoutes = (path) => {
   return (

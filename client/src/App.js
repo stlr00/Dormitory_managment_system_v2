@@ -4,7 +4,7 @@ import {useRoutes} from './routes'
 import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
-  const routes = useRoutes(true)
+  const routes = useRoutes()
   return (
     <Router>
       {routes}
