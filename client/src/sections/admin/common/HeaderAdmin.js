@@ -3,10 +3,11 @@ import {HeaderLink} from './HeaderLink'
 import {Container, Navbar} from 'react-bootstrap'
 
 export const HeaderAdmin = () => {
-  const namesUrl = [{name: 'Список студентов', url: '/'},
+  const namesUrl = [
+    {name: 'Список студентов', url: '/'},
     {name: 'Заселение', url: '/add'},
     {name: 'Жалобы', url: '/zhaloby'},
-    {name: 'Строй-отряд', url: 'stroyotryad'},
+    {name: 'Строй-отряд', url: '/stroyotryad'},
   ]
 
   return (

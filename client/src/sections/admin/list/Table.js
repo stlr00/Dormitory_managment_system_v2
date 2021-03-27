@@ -6,8 +6,7 @@ export const Table = () => {
 
   const fetchData = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
-    const data = await res.json()
-    return data
+    return await res.json()
   }
   useEffect(() => {
     fetchData().then((data) => setUsers(data))
@@ -16,7 +15,6 @@ export const Table = () => {
   return (
     <div className="card bg-light">
       <div className="card-body">
-
         <table className="table">
           <thead>
             <tr>

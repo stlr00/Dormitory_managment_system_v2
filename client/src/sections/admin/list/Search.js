@@ -12,7 +12,7 @@ export const Search = () => {
               <input
                 className="form-check-input"
                 type="radio" id="formCheck-1"
-                checked="" value="fam"
+                value="fam"
                 name="search-type"
               />
               <label
