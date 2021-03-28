@@ -3,6 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faInfoCircle, faTrashAlt, faPencilAlt}
   from '@fortawesome/free-solid-svg-icons'
 import {Collapse} from 'react-bootstrap'
+import './TableRow.css'
 
 export const TableRow = ({user}) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,7 +26,7 @@ export const TableRow = ({user}) => {
             className="badge badge-pill badge-info text-white"
             href="#info" role="button"
             aria-expanded={isOpen}
-            aria-controls="info-id"
+            aria-controls={'info-'+user.id}
           >
             <FontAwesomeIcon icon={faInfoCircle}/>
           </a>&nbsp;
@@ -46,10 +47,10 @@ export const TableRow = ({user}) => {
         </td>
       </tr>
       <tr>
-        <td className="no-cell-border p-0" colSpan="5">
+        <td className="p-0 no-td-border" colSpan="5">
           <Collapse in={isOpen}>
-            <div id="info-id">
-              <div className="card border rounded-0 no-card-border">
+            <div id={'info-'+user.id}>
+              <div className="card rounded-0">
                 <div className="card-body">
                   <p className="card-text"><strong>Дата
                     рождения:</strong>&nbsp;18.07.2000</p>
@@ -59,8 +60,7 @@ export const TableRow = ({user}) => {
                     <strong>Курс:</strong>&nbsp;3
                   </p>
                   <p className="card-text"><strong>Постоянная
-                    регистрация:</strong>&nbsp;г.
-                    Армавир, ул. Ыыы</p>
+                    регистрация:</strong>&nbsp;{user.address.street}</p>
                   <p className="card-text"><strong>Номер
                     договора:</strong>&nbsp;ОБ-2/31</p>
                   <p className="card-text"><strong>Дата

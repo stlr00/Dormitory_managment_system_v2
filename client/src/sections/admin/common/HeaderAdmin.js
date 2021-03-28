@@ -1,6 +1,8 @@
 import React from 'react'
 import {HeaderLink} from './HeaderLink'
 import {Container, Navbar} from 'react-bootstrap'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faBuilding} from '@fortawesome/free-regular-svg-icons'
 
 export const HeaderAdmin = () => {
   const namesUrl = [
@@ -14,17 +16,17 @@ export const HeaderAdmin = () => {
     <Navbar collapseOnSelect bg="dark" expand="md" fixed="top" variant="dark">
       <Container>
         <Navbar.Brand>
-          <i className="fa fa-building"/>
+          <FontAwesomeIcon icon={faBuilding}/>
           &nbsp;Общежитие №2
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <ul className="nav navbar-nav flex-grow-0">
+          <ul className="navbar-nav mr-auto">
             {namesUrl.map(({name, url}, index) =>
               <HeaderLink name={name} url={url} key={index}/>)}
           </ul>
           <button
-            className="btn btn-outline-light btn-sm ml-auto my-2 my-md-0"
+            className="btn btn-outline-light btn-sm my-2 my-md-0"
             type="button"
           >
             Выход

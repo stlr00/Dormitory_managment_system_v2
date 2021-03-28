@@ -2,7 +2,7 @@ import React from 'react'
 import {useRouteMatch} from 'react-router-dom'
 import {HeaderAdmin} from './common/HeaderAdmin'
 import {useAdminRoutes} from './adminRoutes'
-import './styles.css'
+import './MainAdmin.css'
 
 export const MainAdmin = () => {
   const {path, url} = useRouteMatch()

@@ -1,15 +1,15 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
-import {StudentList} from './list/StudentList'
+import {List} from './list/List'
 import {StudentAdd} from './add/StudentAdd'
 
-export const useAdminRoutes = (path) => {
+export const useAdminRoutes = () => {
   return (
     <Switch>
-      <Route path={path} exact>
-        <StudentList />
+      <Route path='/' exact>
+        <List />
       </Route>
-      <Route path={`${path}/add`} exact>
+      <Route path='/add' exact>
         <StudentAdd />
       </Route>
     </Switch>

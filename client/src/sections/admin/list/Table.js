@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {TableRow} from './TableRow'
+import './Table.css'
 
 export const Table = () => {
   const [users, setUsers] = useState([])
@@ -22,7 +23,7 @@ export const Table = () => {
               <th className="text-nowrap">Кв/К</th>
               <th>Ф.И.О</th>
               <th className="d-none d-md-table-cell">Курс</th>
-              <th>Доп.</th>
+              <th className="text-center">Доп.</th>
             </tr>
           </thead>
           <tbody>

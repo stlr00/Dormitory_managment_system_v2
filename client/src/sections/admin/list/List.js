@@ -2,7 +2,7 @@ import React from 'react'
 import {Table} from './Table'
 import {Search} from './Search'
 
-export const StudentList = () => {
+export const List = () => {
   return (
     <>
       <div className="col-md-8 order-2 order-md-1">
