@@ -1,13 +1,11 @@
 import React from 'react'
 import {BrowserRouter as Router} from 'react-router-dom'
-import {useRoutes} from './routes'
-import 'bootstrap/dist/css/bootstrap.css'
+import {Admin} from './sections/Admin/Admin'
 
 function App() {
-  const routes = useRoutes()
   return (
     <Router>
-      {routes}
+      <Admin />
     </Router>
   )
 }

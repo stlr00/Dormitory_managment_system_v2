@@ -4,12 +4,12 @@ import {Container, Navbar} from 'react-bootstrap'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBuilding} from '@fortawesome/free-regular-svg-icons'
 
-export const HeaderAdmin = () => {
+export const Header = () => {
   const namesUrl = [
-    {name: 'Список студентов', url: '/'},
+    {name: 'Список студентов', url: '/list'},
     {name: 'Заселение', url: '/add'},
-    {name: 'Жалобы', url: '/zhaloby'},
-    {name: 'Строй-отряд', url: '/stroyotryad'},
+    {name: 'Жалобы', url: '/complaints'},
+    {name: 'Строй-отряд', url: '/renovations'},
   ]
 
   return (
