@@ -7,9 +7,8 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.12",
-    "@testing-library/jest-dom": "^5.11.5",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
     "bootstrap": "^4.6.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
@@ -32,16 +31,10 @@
       "google"
     ],
     "rules": {
-      "require-jsdoc": "off",
-      "semi": [
-        "error",
-        "never"
-      ],
+      "semi": "off",
       "linebreak-style": "off",
-      "indent": [
-        "error",
-        2
-      ]
+      "indent": ["warn", 2],
+      "require-jsdoc": "off"
     }
   },
   "browserslist": {

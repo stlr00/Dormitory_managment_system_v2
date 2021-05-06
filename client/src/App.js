@@ -5,7 +5,7 @@ import {Admin} from './sections/Admin/Admin'
 function App() {
   return (
     <Router>
-      <Admin />
+      <Admin/>
     </Router>
   )
 }

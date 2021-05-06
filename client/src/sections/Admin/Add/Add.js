@@ -1,11 +1,12 @@
 import React from 'react'
+// import {useForm} from 'react-hook-form'
 import {Alert} from './Alert'
 import {FieldsetType} from './Form/FieldsetType'
 
 export const Add = () => {
   return (
     <div className="container">
-      {Alert}
+      <Alert/>
       <div className="row">
         <div className="col-lg-10 m-lg-auto">
           <div className="card bg-light">
@@ -13,8 +14,9 @@ export const Add = () => {
               <h2 className="card-title">Добавление нового студента</h2>
               <p className="card-text">
                 Здесь вы можете добавить нового студента.
-                Для этого заполните все поля и нажмите "добавить".</p>
-              <form>
+                Для этого заполните все поля и нажмите "добавить".
+              </p>
+              <form onSubmit>
                 <div className="form-row">
                   <div className="form-group col-md-4">
                     <label htmlFor="last_name">Фамилия</label>
@@ -27,7 +29,8 @@ export const Add = () => {
                     <label htmlFor="name">Имя</label>
                     <input
                       className="form-control"
-                      type="text" id="name"/>
+                      type="text" id="name"
+                    />
                   </div>
                   <div className="form-group col-md-4">
                     <label
@@ -35,16 +38,17 @@ export const Add = () => {
                     </label>
                     <input
                       className="form-control"
-                      type="text" id="patronymic"/>
+                      type="text" id="patronymic"
+                    />
                   </div>
                 </div>
                 <div className="form-row">
                   <div className="form-group col-md-4">
-                    <label htmlFor="birthday">Дата
-                      рождения</label>
+                    <label htmlFor="birthday">Дата рождения</label>
                     <input
                       className="form-control"
-                      id="birthday" type="date"/>
+                      id="birthday" type="date"
+                    />
                   </div>
                   <div className="form-group col">
                     <label htmlFor="address">
@@ -53,13 +57,14 @@ export const Add = () => {
                     <input
                       className="form-control"
                       type="text"
-                      id="address"/>
+                      id="address"
+                    />
                   </div>
                 </div>
                 <div className="form-row">
                   <div className="form-group col-md-3">
-                    <label
-                      htmlFor="contract">Номер договора
+                    <label htmlFor="contract">
+                      Номер договора
                     </label>
                     <div className="input-group">
                       <div className="input-group-prepend">
@@ -67,7 +72,8 @@ export const Add = () => {
                       </div>
                       <input
                         className="form-control"
-                        type="text" id="contract"/>
+                        type="text" id="contract"
+                      />
                     </div>
                   </div>
                   <div className="col-md-8 col-lg-7">
