@@ -18,24 +18,12 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^0.2.4"
   },
+  "proxy": "http://localhost:3001",
   "scripts": {
     "client:start": "react-scripts start",
     "client:build": "react-scripts build",
     "client:test": "react-scripts test",
     "client:eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "google"
-    ],
-    "rules": {
-      "semi": "off",
-      "linebreak-style": "off",
-      "indent": ["warn", 2],
-      "require-jsdoc": "off"
-    }
   },
   "browserslist": {
     "production": [
