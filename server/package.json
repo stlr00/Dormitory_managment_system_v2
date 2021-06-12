@@ -14,8 +14,6 @@
   "author": "Alexandr Veselkin <sashaasdzxc@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.12.1",
-    "eslint-config-google": "^0.14.0",
     "nodemon": "^2.0.6"
   },
   "dependencies": {
