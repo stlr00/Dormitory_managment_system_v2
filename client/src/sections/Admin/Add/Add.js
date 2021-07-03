@@ -8,7 +8,7 @@ export const Add = () => {
   const [firstName, setFirstName] = useState('')
   const [secondName, setSecondName] = useState('')
   const [birthday, setBirthday] = useState('')
-  const [address, setAdress] = useState('')
+  const [address, setAddress] = useState('')
   const [num, setNum] = useState('')
   const [type, setType] = useState('')
   const [course, setCourse] = useState('')
@@ -99,7 +99,7 @@ export const Add = () => {
                     </label>
                     <input
                       value={address}
-                      onChange={(e) => setAdress(e.target.value)}
+                      onChange={(e) => setAddress(e.target.value)}
                       className="form-control"
                       type="text"
                       id="address"
